@@ -48,11 +48,10 @@
 .btn-outline {
   background: transparent;
   border: 1px solid #fff;
-
 }
 
-.btn-outline a:hover{
-  background:#333;
+.btn-outline a:hover {
+  background: #333;
   color: #fff;
 }
 
@@ -69,6 +68,10 @@
 }
 
 /*  Flex Columns */
+
+.flex-columns.flex-reverse .row {
+  flex-direction: row-reverse;
+}
 
 .flex-columns .row {
   display: flex;
@@ -95,7 +98,6 @@
   object-fit: cover;
 }
 
-
 .flex-columns .column-2 {
   display: flex;
   flex-direction: column;
@@ -104,17 +106,54 @@
   padding: 30px;
 }
 
-.flex-columns h2{
+.flex-columns h2 {
   font-size: 40px;
   font-weight: 100;
-
 }
 
-.flex-columns h4{
+.flex-columns h4 {
   margin-bottom: 10px;
-
 }
 
 .flex-columns p {
   margin: 20px 0;
 }
+/* Section-header */
+
+.section-header {
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.section-header h2 {
+  font-size: 40px;
+  margin: 20px 0;
+}
+
+.section-padding {
+  padding: 20px 20px 40px;
+}
+
+
+/* Flex Grid */
+
+.flex-grid .row {
+  display: flex;
+  flex-wrap: wrap-reverse;
+  padding: 0px 4px;
+}
+
+.flex-grid .column{
+  flex: 25%;
+  max-width: 25%;
+  padding: 0 4px;
+}
+
+.flex-grid .column img {
+  height: 50%;
+}
+
